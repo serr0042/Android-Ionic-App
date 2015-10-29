@@ -1,0 +1,22 @@
+{
+  "name": "Android-Ionic-App",
+  "version": "1.0.0",
+  "description": "An Android Ionic application utilizing sidemenu template, local storage, ngcordova and bower which maintains three lists.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serr0042/Android-Ionic-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serr0042/Android-Ionic-App/issues"
+  },
+  "homepage": "https://github.com/serr0042/Android-Ionic-App",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
+}
