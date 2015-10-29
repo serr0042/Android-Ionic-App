@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-local-notifications",
+  "_cacheHeaders": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "main": "index",
+  "_source": "https://github.com/katzer/cordova-plugin-local-notifications",
+  "_target": "*",
+  "_originalSource": "https://github.com/katzer/cordova-plugin-local-notifications",
+  "_direct": true
+}

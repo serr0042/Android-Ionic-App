@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-vibration",
+  "_cacheHeaders": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "main": "index",
+  "_source": "https://github.com/apache/cordova-plugin-vibration",
+  "_target": "*",
+  "_originalSource": "https://github.com/apache/cordova-plugin-vibration",
+  "_direct": true
+}

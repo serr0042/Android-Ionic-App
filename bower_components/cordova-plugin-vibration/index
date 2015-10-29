@@ -1,0 +1,1279 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>apache/cordova-plugin-vibration · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="apache/cordova-plugin-vibration" name="twitter:title" /><meta content="cordova-plugin-vibration - Mirror of Apache Cordova Plugin vibration" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/47359?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/47359?v=3&amp;s=400" property="og:image" /><meta content="apache/cordova-plugin-vibration" property="og:title" /><meta content="https://github.com/apache/cordova-plugin-vibration" property="og:url" /><meta content="cordova-plugin-vibration - Mirror of Apache Cordova Plugin vibration" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="8E719EF4:5929:10B59AD:56323AE2" name="octolytics-dimension-request_id" />
+
+<meta content="Rails, view, files#disambiguate" data-pjax-transient="true" name="analytics-event" />
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+    <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+
+
+
+
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="a9c21788665d213cce2a436173a35e70deec03de" name="form-nonce" />
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3054eeda95562332855606169ec9cc44db3ce684e8e1f774a78d69721a74b009.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-00a8be553371a21678bd88362a07c328eda1b6f1a38d00f799b6bb3b99198706.css" media="all" rel="stylesheet" />
+    
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="d2db6eedd67178b84dd88bd98ce6738f">
+
+      
+  <meta name="description" content="cordova-plugin-vibration - Mirror of Apache Cordova Plugin vibration">
+  <meta name="go-import" content="github.com/apache/cordova-plugin-vibration git https://github.com/apache/cordova-plugin-vibration.git">
+
+  <meta content="47359" name="octolytics-dimension-user_id" /><meta content="apache" name="octolytics-dimension-user_login" /><meta content="10860607" name="octolytics-dimension-repository_id" /><meta content="apache/cordova-plugin-vibration" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="10860607" name="octolytics-dimension-repository_network_root_id" /><meta content="apache/cordova-plugin-vibration" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/apache/cordova-plugin-vibration/commits/master.atom" rel="alternate" title="Recent Commits to cordova-plugin-vibration:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out   env-production  vis-public mirror">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fapache%2Fcordova-plugin-vibration" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/apache/cordova-plugin-vibration/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/apache/cordova-plugin-vibration/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+
+      <div class="container">
+
+        <div class="clearfix">
+          
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fapache%2Fcordova-plugin-vibration"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/apache/cordova-plugin-vibration/watchers">
+    3
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fapache%2Fcordova-plugin-vibration"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/apache/cordova-plugin-vibration/stargazers">
+      42
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fapache%2Fcordova-plugin-vibration"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+
+    <a href="/apache/cordova-plugin-vibration/network" class="social-count">
+      59
+    </a>
+  </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public repo-mirror">
+  <span class="mega-octicon octicon-mirror"></span>
+  <span class="author"><a href="/apache" class="url fn" itemprop="url" rel="author"><span itemprop="title">apache</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/apache/cordova-plugin-vibration" data-pjax="#js-repo-pjax-container">cordova-plugin-vibration</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+    <span class="mirror-flag">
+      <span class="text">mirrored from <a href="git://git.apache.org/cordova-plugin-vibration.git">git://git.apache.org/cordova-plugin-vibration.git</a></span>
+    </span>
+</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline with-full-navigation">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/apache/cordova-plugin-vibration/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/apache/cordova-plugin-vibration" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /apache/cordova-plugin-vibration">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/apache/cordova-plugin-vibration/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /apache/cordova-plugin-vibration/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/apache/cordova-plugin-vibration/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /apache/cordova-plugin-vibration/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/apache/cordova-plugin-vibration/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /apache/cordova-plugin-vibration/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3 class="text-small text-muted"><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/apache/cordova-plugin-vibration.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3 class="text-small text-muted"><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/apache/cordova-plugin-vibration" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<div class="clone-options text-small text-muted">You can clone with
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="a9c21788665d213cce2a436173a35e70deec03de" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SqxBIrsz8CE6XwbdtN+K+x+5O4eQ40wuWeYVTHFMADWc0a63KcH5e+P79KTV8Vxn9MSXco/2g8wxCkgxCHLkTQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="a9c21788665d213cce2a436173a35e70deec03de" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6l1aDuvtD6IK5Wl+K8UTGomQESKzjaw7XE5zCYp93P3XALkNhNqHrcnm/krQzTxwQVDu1del0Bqsw+OctNVq8Q==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</div>
+
+              <a href="/apache/cordova-plugin-vibration/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of apache/cordova-plugin-vibration as a zip file"
+                 title="Download the contents of apache/cordova-plugin-vibration as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<span id="js-show-full-navigation"></span>
+
+  <div class="repository-meta js-details-container ">
+    <div class="repository-description">
+      Mirror of Apache Cordova Plugin vibration
+    </div>
+
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/apache/cordova-plugin-vibration/commits/master">
+            <span class="octicon octicon-history"></span>
+            <span class="num text-emphasized">
+              224
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/apache/cordova-plugin-vibration/branches">
+          <span class="octicon octicon-git-branch"></span>
+          <span class="num text-emphasized">
+            10
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/apache/cordova-plugin-vibration/releases">
+          <span class="octicon octicon-tag"></span>
+          <span class="num text-emphasized">
+            16
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/apache/cordova-plugin-vibration/graphs/contributors">
+    <span class="octicon octicon-organization"></span>
+    <span class="num text-emphasized">
+      32
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/apache/cordova-plugin-vibration/search?l=cpp">
+                <span class="color-block language-color" style="background-color:#f34b7d;"></span>
+                <span class="lang">C++</span>
+                <span class="percent">39.9%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/apache/cordova-plugin-vibration/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">38.9%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/apache/cordova-plugin-vibration/search?l=csharp">
+                <span class="color-block language-color" style="background-color:#178600;"></span>
+                <span class="lang">C#</span>
+                <span class="percent">10.8%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/apache/cordova-plugin-vibration/search?l=java">
+                <span class="color-block language-color" style="background-color:#b07219;"></span>
+                <span class="lang">Java</span>
+                <span class="percent">7.6%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/apache/cordova-plugin-vibration/search?l=objective-c">
+                <span class="color-block language-color" style="background-color:#438eff;"></span>
+                <span class="lang">Objective-C</span>
+                <span class="percent">2.8%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details">
+    <span class="language-color" aria-label="C++ 39.9%" style="width:39.9%; background-color:#f34b7d;" itemprop="keywords">C++</span>
+    <span class="language-color" aria-label="JavaScript 38.9%" style="width:38.9%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+    <span class="language-color" aria-label="C# 10.8%" style="width:10.8%; background-color:#178600;" itemprop="keywords">C#</span>
+    <span class="language-color" aria-label="Java 7.6%" style="width:7.6%; background-color:#b07219;" itemprop="keywords">Java</span>
+    <span class="language-color" aria-label="Objective-C 2.8%" style="width:2.8%; background-color:#438eff;" itemprop="keywords">Objective-C</span>
+  </div>
+
+<include-fragment src="/apache/cordova-plugin-vibration/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+
+  <div class="file-navigation in-mid-page">
+  <a href="/apache/cordova-plugin-vibration/find/master"
+        class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s right"
+        data-pjax
+        data-hotkey="t"
+        aria-label="Quickly jump between files"
+        data-ga-click="Repository, find file, location:repo overview">
+    <span class="octicon octicon-list-unordered"></span>
+  </a>
+
+
+    <a href="/apache/cordova-plugin-vibration/compare" aria-label="Compare, review, create a pull request" class="btn btn-sm btn-primary tooltipped tooltipped-se left compare-button" aria-label="Compare &amp; review" data-pjax data-ga-click="Repository, go to compare view, location:repo overview; icon:git-compare">
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-6127cordova-plugin-vibration"
+               data-name="CB-6127cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-6127cordova-plugin-vibration">
+                CB-6127cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-8438cordova-plugin-vibration"
+               data-name="CB-8438cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-8438cordova-plugin-vibration">
+                CB-8438cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-8600cordova-plugin-vibration"
+               data-name="CB-8600cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-8600cordova-plugin-vibration">
+                CB-8600cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-8860cordova-plugin-vibration"
+               data-name="CB-8860cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-8860cordova-plugin-vibration">
+                CB-8860cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-9128cordova-plugin-vibration"
+               data-name="CB-9128cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-9128cordova-plugin-vibration">
+                CB-9128cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-9381cordova-plugin-vibration"
+               data-name="CB-9381cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-9381cordova-plugin-vibration">
+                CB-9381cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/CB-9444cordova-plugin-vibration"
+               data-name="CB-9444cordova-plugin-vibration"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="CB-9444cordova-plugin-vibration">
+                CB-9444cordova-plugin-vibration
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/dev"
+               data-name="dev"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="dev">
+                dev
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/apache/cordova-plugin-vibration/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/apache/cordova-plugin-vibration/tree/old-ID"
+               data-name="old-ID"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="old-ID">
+                old-ID
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r1.2.0"
+                 data-name="r1.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r1.2.0">r1.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r1.1.0"
+                 data-name="r1.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r1.1.0">r1.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r1.0.0"
+                 data-name="r1.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r1.0.0">r1.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.13"
+                 data-name="r0.3.13"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.13">r0.3.13</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.12"
+                 data-name="r0.3.12"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.12">r0.3.12</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.11"
+                 data-name="r0.3.11"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.11">r0.3.11</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.10"
+                 data-name="r0.3.10"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.10">r0.3.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.9"
+                 data-name="r0.3.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.9">r0.3.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.8"
+                 data-name="r0.3.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.8">r0.3.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.7"
+                 data-name="r0.3.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.7">r0.3.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.6"
+                 data-name="r0.3.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.6">r0.3.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.5"
+                 data-name="r0.3.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.5">r0.3.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.4"
+                 data-name="r0.3.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.4">r0.3.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.3"
+                 data-name="r0.3.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.3">r0.3.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.2"
+                 data-name="r0.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.2">r0.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/apache/cordova-plugin-vibration/tree/r0.3.0"
+                 data-name="r0.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="r0.3.0">r0.3.0</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="breadcrumb"><span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/apache/cordova-plugin-vibration" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">cordova-plugin-vibration</span></a></span></span><span class="separator">/</span>
+  <span class="tooltipped tooltipped-e disabled text-muted" aria-label="You must be signed in to make or propose changes">
+    <span class="octicon octicon-plus"></span>
+  </span>
+</div>
+</div>
+
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="/apache/cordova-plugin-vibration/commit/90cdf443dcb05a5a0d0511cc166c5f519d76e6cb" data-pjax>
+        90cdf44
+      </a>
+      <time datetime="2015-10-23T19:11:50Z" is="relative-time">Oct 23, 2015</time>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@dblotsky" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/405489?v=3&amp;s=40" width="20" />
+      <a href="/dblotsky" class="user-mention" rel="contributor">dblotsky</a>
+    </span>
+
+        <a href="/apache/cordova-plugin-vibration/commit/90cdf443dcb05a5a0d0511cc166c5f519d76e6cb" class="message" data-pjax="true" title="Actually fixing the contribute link.">Actually fixing the contribute link.</a>
+    </span>
+
+  </div>
+
+
+<div class="file-wrap">
+  <a href="/apache/cordova-plugin-vibration/tree/90cdf443dcb05a5a0d0511cc166c5f519d76e6cb" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/tree/master/doc" class="js-directory-link js-navigation-open" id="9a09b4dfda82e3e665e31092d1c3ec8d-c8e7dd364cd9c648cf665e68f50e7f34312210e3" title="doc">doc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/0fa15e6fbdccff6dfb40b040476fb78a2e1e0236" class="message" data-pjax="true" title="CB-9128 cordova-plugin-vibration documentation translation: cordova-plugin-vibration">CB-9128 cordova-plugin-vibration documentation translation: cordova-p…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-12T14:42:50Z" is="time-ago">Jun 12, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/tree/master/src" class="js-directory-link js-navigation-open" id="25d902c24283ab8cfbac54dfa101ad31-4038f9e073d56ea7db9c46a8b4c4b77d6fa36ba5" title="src">src</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/6111d62262d280a8afdf6e47521123358295fe79" class="message" data-pjax="true" title="Removed call to add proxy and renamed browser file">Removed call to add proxy and renamed browser file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-01T18:51:20Z" is="time-ago">Sep 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/tree/master/tests" class="js-directory-link js-navigation-open" id="b61a6d542f9036550ba9c401c80f00ef-e6db6a20b83f36eef6ddccfdff89983e7b4aa298" title="tests">tests</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/84a9ea29b7c49a5c2ab43cf8f062bd89a998e3c6" class="message" data-pjax="true" title="Fixed browser platform to pass tests and combined tests">Fixed browser platform to pass tests and combined tests</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-01T21:03:32Z" is="time-ago">Sep 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/tree/master/www" class="js-directory-link js-navigation-open" id="4eae35f1b35977a00ebd8086c259d4c9-1d0ae055d8fd8fb8e181769fbbb5444e6dae9547" title="www">www</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/aa9835a71bc12e62d4520ac575de74a4e2790c84" class="message" data-pjax="true" title="[CB-7966] Add cordova-plugin-vibration support for browser platform">[CB-7966] Add cordova-plugin-vibration support for browser platform</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-31T23:34:57Z" is="time-ago">Aug 31, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/.gitignore" class="js-directory-link js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-52b558e40a2665ac99c3feb48d5f945c6ab28eee" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/601c23433d4391843abdfe9d2cd5cb6caa76c601" class="message" data-pjax="true" title="ignore stuff">ignore stuff</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2013-07-16T01:30:31Z" is="time-ago">Jul 15, 2013</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/.ratignore" class="js-directory-link js-navigation-open" id="e0cc9ec0d3adb25e34fe41dc09d51012-b36eba9cae08201262d166df1821cac490a31a6b" title=".ratignore">.ratignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/aef80e104dd4c9e6d8c8e579ad1a211e3949d24b" class="message" data-pjax="true" title="Adding .ratignore file.">Adding .ratignore file.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-17T04:30:59Z" is="time-ago">Jun 16, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/CONTRIBUTING.md" class="js-directory-link js-navigation-open" id="6a3371457528722a734f3c51d9238c13-4c8e6a5eab3439439d33678207c28ed863ed0f74" title="CONTRIBUTING.md">CONTRIBUTING.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/90cdf443dcb05a5a0d0511cc166c5f519d76e6cb" class="message" data-pjax="true" title="Actually fixing the contribute link.">Actually fixing the contribute link.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-23T19:11:50Z" is="time-ago">Oct 23, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/LICENSE" class="js-directory-link js-navigation-open" id="9879d6db96fd29134fc802214163b95a-7a4a3ea2424c09fbe48d455aed1eaa94d9124835" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/f2d7ee76d192ca948540bfe5be89f614c497e597" class="message" data-pjax="true" title="[license] adding apache license file">[license] adding apache license file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2013-08-06T21:42:09Z" is="time-ago">Aug 6, 2013</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/NOTICE" class="js-directory-link js-navigation-open" id="aa14599dc3fdfa9cc81a7c3c247b77b9-899844a715ce513874f9528b8abf4f8bbe12bc88" title="NOTICE">NOTICE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/1459975628dcec9f53f93b8a1f3a1f1377969d5a" class="message" data-pjax="true" title="updated notice file">updated notice file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-06-05T19:50:42Z" is="time-ago">Jun 5, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/README.md" class="js-directory-link js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-b7117e5acdfd8c2fd75ecf456049b0d8fa25317f" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/cc8d8031aba903fb9811d70deb46e4ac19f58689" class="message" data-pjax="true" title="remove travis-ci">remove travis-ci</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-08T01:04:09Z" is="time-ago">Jul 7, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/RELEASENOTES.md" class="js-directory-link js-navigation-open" id="c162d66bb4a22683316f0fc47e104078-c0ab99ab3bd74873f1838b2ef88346f9f02f524e" title="RELEASENOTES.md">RELEASENOTES.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/aad94618b76c238cd2d4711353311d5fe06d6f99" class="message" data-pjax="true" title="CB-9192 Updated version and RELEASENOTES.md for release 1.2.0">CB-9192 Updated version and RELEASENOTES.md for release 1.2.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-17T19:36:06Z" is="time-ago">Jun 17, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/package.json" class="js-directory-link js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-06d0bcccd6cdc367ea1880bceec0e07b013c2044" title="package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/aa9835a71bc12e62d4520ac575de74a4e2790c84" class="message" data-pjax="true" title="[CB-7966] Add cordova-plugin-vibration support for browser platform">[CB-7966] Add cordova-plugin-vibration support for browser platform</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-31T23:34:57Z" is="time-ago">Aug 31, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/apache/cordova-plugin-vibration/blob/master/plugin.xml" class="js-directory-link js-navigation-open" id="53f390d375398624afe1cfe1125f42bf-73674a24201b2abb8f0fe6f8a64b8b1fb0282c37" title="plugin.xml">plugin.xml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/apache/cordova-plugin-vibration/commit/84a9ea29b7c49a5c2ab43cf8f062bd89a998e3c6" class="message" data-pjax="true" title="Fixed browser platform to pass tests and combined tests">Fixed browser platform to pass tests and combined tests</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-01T21:03:32Z" is="time-ago">Sep 1, 2015</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <div id="readme" class="boxed-group flush clearfix announce instapaper_body md">
+    <h3>
+      <span class="octicon octicon-book"></span>
+      README.md
+    </h3>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+
+<h1><a id="user-content-cordova-plugin-vibration" class="anchor" href="#cordova-plugin-vibration" aria-hidden="true"><span class="octicon octicon-link"></span></a>cordova-plugin-vibration</h1>
+
+<p>This plugin aligns with the W3C vibration specification <a href="http://www.w3.org/TR/vibration/">http://www.w3.org/TR/vibration/</a></p>
+
+<p>This plugin provides a way to vibrate the device.</p>
+
+<p>This plugin defines global objects including <code>navigator.vibrate</code>.</p>
+
+<p>Although in the global scope, they are not available until after the <code>deviceready</code> event.</p>
+
+<pre><code>document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.vibrate);
+}
+</code></pre>
+
+<h2><a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>cordova plugin add cordova-plugin-vibration
+</code></pre>
+
+<h2><a id="user-content-supported-platforms" class="anchor" href="#supported-platforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported Platforms</h2>
+
+<p>navigator.vibrate,<br>
+navigator.notification.vibrate</p>
+
+<ul>
+<li>Amazon Fire OS</li>
+<li>Android</li>
+<li>BlackBerry 10</li>
+<li>Firefox OS</li>
+<li>iOS</li>
+<li>Windows Phone 7 and 8</li>
+<li>Windows (Windows Phone 8.1 devices only)</li>
+</ul>
+
+<p>navigator.notification.vibrateWithPattern<br>
+navigator.notification.cancelVibration</p>
+
+<ul>
+<li>Android</li>
+<li>Windows Phone 8</li>
+<li>Windows (Windows Phone 8.1 devices only)</li>
+</ul>
+
+<h2><a id="user-content-vibrate-recommended" class="anchor" href="#vibrate-recommended" aria-hidden="true"><span class="octicon octicon-link"></span></a>vibrate (recommended)</h2>
+
+<p>This function has three different functionalities based on parameters passed to it.</p>
+
+<h3><a id="user-content-standard-vibrate" class="anchor" href="#standard-vibrate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Standard vibrate</h3>
+
+<p>Vibrates the device for a given amount of time.</p>
+
+<pre><code>navigator.vibrate(time)
+</code></pre>
+
+<p>or</p>
+
+<pre><code>navigator.vibrate([time])
+</code></pre>
+
+<p>-<strong>time</strong>: Milliseconds to vibrate the device. <em>(Number)</em></p>
+
+<h4><a id="user-content-example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
+
+<pre><code>// Vibrate for 3 seconds
+navigator.vibrate(3000);
+
+// Vibrate for 3 seconds
+navigator.vibrate([3000]);
+</code></pre>
+
+<h4><a id="user-content-ios-quirks" class="anchor" href="#ios-quirks" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS Quirks</h4>
+
+<ul>
+<li><p><strong>time</strong>: Ignores the specified time and vibrates for a pre-set amount of time.</p>
+
+<p>navigator.vibrate(3000); // 3000 is ignored</p></li>
+</ul>
+
+<h4><a id="user-content-windows-and-blackberry-quirks" class="anchor" href="#windows-and-blackberry-quirks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows and Blackberry Quirks</h4>
+
+<ul>
+<li><p><strong>time</strong>: Max time is 5000ms (5s) and min time is 1ms</p>
+
+<p>navigator.vibrate(8000); // will be truncated to 5000</p></li>
+</ul>
+
+<h3><a id="user-content-vibrate-with-a-pattern-android-and-windows-only" class="anchor" href="#vibrate-with-a-pattern-android-and-windows-only" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vibrate with a pattern (Android and Windows only)</h3>
+
+<p>Vibrates the device with a given pattern</p>
+
+<pre><code>navigator.vibrate(pattern);   
+</code></pre>
+
+<ul>
+<li><strong>pattern</strong>: Sequence of durations (in milliseconds) for which to turn on or off the vibrator. <em>(Array of Numbers)</em></li>
+</ul>
+
+<h4><a id="user-content-example-1" class="anchor" href="#example-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
+
+<pre><code>// Vibrate for 1 second
+// Wait for 1 second
+// Vibrate for 3 seconds
+// Wait for 1 second
+// Vibrate for 5 seconds
+navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
+</code></pre>
+
+<h4><a id="user-content-windows-phone-8-quirks" class="anchor" href="#windows-phone-8-quirks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows Phone 8 Quirks</h4>
+
+<ul>
+<li>vibrate(pattern) falls back on vibrate with default duration</li>
+</ul>
+
+<h4><a id="user-content-windows-quirks" class="anchor" href="#windows-quirks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows Quirks</h4>
+
+<ul>
+<li>vibrate(pattern) falls back on vibrate with default duration</li>
+</ul>
+
+<h3><a id="user-content-cancel-vibration-not-supported-in-ios" class="anchor" href="#cancel-vibration-not-supported-in-ios" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cancel vibration (not supported in iOS)</h3>
+
+<p>Immediately cancels any currently running vibration.</p>
+
+<pre><code>navigator.vibrate(0)
+</code></pre>
+
+<p>or</p>
+
+<pre><code>navigator.vibrate([])
+</code></pre>
+
+<p>or</p>
+
+<pre><code>navigator.vibrate([0])
+</code></pre>
+
+<p>Passing in a parameter of 0, an empty array, or an array with one element of value 0 will cancel any vibrations.</p>
+
+<h2><a id="user-content-notificationvibrate-deprecated" class="anchor" href="#notificationvibrate-deprecated" aria-hidden="true"><span class="octicon octicon-link"></span></a>*notification.vibrate (deprecated)</h2>
+
+<p>Vibrates the device for a given amount of time.</p>
+
+<pre><code>navigator.notification.vibrate(time)
+</code></pre>
+
+<ul>
+<li><strong>time</strong>: Milliseconds to vibrate the device. <em>(Number)</em></li>
+</ul>
+
+<h3><a id="user-content-example-2" class="anchor" href="#example-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<pre><code>// Vibrate for 2.5 seconds
+navigator.notification.vibrate(2500);
+</code></pre>
+
+<h3><a id="user-content-ios-quirks-1" class="anchor" href="#ios-quirks-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS Quirks</h3>
+
+<ul>
+<li><p><strong>time</strong>: Ignores the specified time and vibrates for a pre-set amount of time.</p>
+
+<pre><code>navigator.notification.vibrate();
+navigator.notification.vibrate(2500);   // 2500 is ignored
+</code></pre></li>
+</ul>
+
+<h2><a id="user-content-notificationvibratewithpattern-deprecated" class="anchor" href="#notificationvibratewithpattern-deprecated" aria-hidden="true"><span class="octicon octicon-link"></span></a>*notification.vibrateWithPattern (deprecated)</h2>
+
+<p>Vibrates the device with a given pattern.</p>
+
+<pre><code>navigator.notification.vibrateWithPattern(pattern, repeat)
+</code></pre>
+
+<ul>
+<li><strong>pattern</strong>: Sequence of durations (in milliseconds) for which to turn on or off the vibrator. <em>(Array of Numbers)</em></li>
+<li><strong>repeat</strong>: Optional index into the pattern array at which to start repeating (will repeat until canceled), or -1 for no repetition (default). <em>(Number)</em></li>
+</ul>
+
+<h3><a id="user-content-example-3" class="anchor" href="#example-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<pre><code>// Immediately start vibrating
+// vibrate for 100ms,
+// wait for 100ms,
+// vibrate for 200ms,
+// wait for 100ms,
+// vibrate for 400ms,
+// wait for 100ms,
+// vibrate for 800ms,
+// (do not repeat)
+navigator.notification.vibrateWithPattern([0, 100, 100, 200, 100, 400, 100, 800]);
+</code></pre>
+
+<h2><a id="user-content-notificationcancelvibration-deprecated" class="anchor" href="#notificationcancelvibration-deprecated" aria-hidden="true"><span class="octicon octicon-link"></span></a>*notification.cancelVibration (deprecated)</h2>
+
+<p>Immediately cancels any currently running vibration.</p>
+
+<pre><code>navigator.notification.cancelVibration()
+</code></pre>
+
+<p>*Note - due to alignment with w3c spec, the starred methods will be phased out</p>
+</article>
+  </div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div>
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.05346s from github-fe118-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-161cec7f4cb9a187f66c2ecb8f59c9098e2ad64458af917ec72f9d61d6b8089b.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-01e06e51cd2f1dfa5d3e3fd6937557f8b62a335b2d33cbed90eff07d25fa5285.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+
